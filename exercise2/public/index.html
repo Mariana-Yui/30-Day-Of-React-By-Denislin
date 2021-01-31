@@ -1,0 +1,113 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Web site created using create-react-app" />
+
+    <title>30 Days Of React App</title>
+    <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .exercise1,
+      .exercise2,
+      .exercise3 {
+        padding: 40px 200px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .exercise1 h2,
+      .exercise2 h2,
+      .exercise3 h2 {
+        font-size: 50px;
+      }
+      .exercise1 h4,
+      .exercise2 h4,
+      .exercise3 h4 {
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .exercise3 h5 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .exercise3 ul {
+        margin-top: 5px;
+      }
+      .exercise1 .nums-wrap,
+      .exercise2 .nums-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .exercise1 .nums-wrap div,
+      .exercise2 .nums-wrap div {
+        position: relative;
+        width: 12.5%;
+        padding-top: 12.5%;
+        border: 1px solid #ffffff;
+      }
+      .exercise1 .nums-wrap div span,
+      .exercise2 .nums-wrap div span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-size: 50px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+      .exercise2 .nums-wrap div span {
+        font-size: 25px;
+      }
+      .exercise3 ul li {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
+        list-style: none;
+      }
+      .exercise3 ul li .lt,
+      .exercise3 ul li .rt {
+        width: 15%;
+        white-space: nowrap;
+      }
+      .exercise3 ul li .md {
+        flex: 1;
+      }
+      .exercise3 ul li .md div {
+        height: 40px;
+        background-color: #ffa100;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

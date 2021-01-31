@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Web site created using create-react-app" />
+
+    <title>30 Days Of React App</title>
+    <style>
+      /* == General style === */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      #root {
+        height: 100%;
+      }
+
+      :root {
+        --color: #ffffff;
+        --common-bg-color: #35ddff;
+        --bg-color: #0e172c;
+      }
+      .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      .app.light header,
+      .app.light footer {
+        background: var(--common-bg-color);
+      }
+      .app.dark header,
+      .app.dark main,
+      .app.dark footer {
+        color: var(--color);
+        background: var(--bg-color);
+        border-bottom: 1px solid var(--color);
+      }
+      .app header {
+        padding: 50px 100px;
+        box-sizing: border-box;
+      }
+      .app main {
+        flex: 1;
+        padding: 50px;
+      }
+      .app main button {
+        margin-top: 50px;
+        padding: 10px;
+        margin-left: 20px;
+        color: var(--color);
+        background-color: var(--common-bg-color);
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        outline-style: none;
+      }
+      .app main button:first-of-type {
+        margin-left: 0;
+      }
+      .app footer {
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
